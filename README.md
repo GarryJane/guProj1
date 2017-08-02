@@ -1,2 +1,2 @@
 # guProj1
-Курсовой проект GU "Интернет магазин" (frontend + backend).
+Курсовой проект GU "Интернет магазин" ('front-end' + 'back-end').
