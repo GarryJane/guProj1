@@ -1,7 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ddl
- * Date: 02.08.17
- * Time: 13:12
- */
+
+require_once ('ClassesLoader.php');
+
+// Инициализация массива директорий Классов
+$classesDirs = [
+    'models'
+];
+
+// Загрузка Классов
+ClassesLoader::load($classesDirs);
