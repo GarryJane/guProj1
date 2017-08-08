@@ -1,0 +1,125 @@
+/* Imports */
+
+/* Mixins */
+=subscribeFormInputFieldSet($bRad1, $bRad2, $bRad3, $bRad4, $fieldW, $fieldH, $fieldBGC)
+  width: $fieldW
+  height: $fieldH
+  background-color: $fieldBGC
+  border-radius: $bRad1 $bRad2 $bRad3 $bRad4
+
+/* Variables */
+$brandColor: #f16d7f
+
+/* Global modifiers*/
+.highlight
+  color: $brandColor
+
+.underline
+  border-bottom: 1px solid #ececec
+
+*
+  padding: 0
+  border: none
+
+body
+  font-family: Lato, Arial, sans-serif
+  color: #222222
+  margin: 0 auto
+  max-width: 1600px
+
+
+.slider__img
+  display: block
+  width: 100%
+  max-width: 1600px
+
+.slider-container__text
+  position: absolute
+  top: 225px
+  left: 225px
+  height: 92px
+  padding-left: 10px
+  border-left: 13px solid #f16d7f
+  font-size: 40px
+  font-weight: 900
+  text-align: left
+  text-transform: uppercase
+  word-spacing: 3px
+
+.slider-container__brand
+  margin-top: -20px
+  font-size: 60px
+  word-spacing: 5px
+
+.slider-container__slogan
+  margin-top: -25px
+
+.hot-dial
+  padding: 90px 0
+
+.hot-dial__item
+  position: relative
+  padding: 10px 0
+
+.hot-dial__img
+  display: block
+  width: 560px
+  height: 542px
+
+.hot-dial__img_low
+  height: 261px
+
+.hot-dial__header
+  position: absolute
+  top: 26px
+  background-color: #ffffff
+
+.hot-dial__text
+  padding-top: 12px
+  padding-left: 17px
+  padding-right: 15px
+  font-size: 18px
+  font-weight: 900
+  text-align: left
+  text-transform: uppercase
+
+.hot-dial__text_category
+  padding-top: 6px
+  color: #f16d7f
+  font-size: 30px
+
+.featured__header
+  font-size: 30px
+  font-weight: 700
+  text-align: center
+
+.featured__header_description
+  padding-bottom: 60px
+  font-size: 14px
+  font-weight: 400
+
+.featured__img
+  display: block
+  width: 261px
+  height: 279px
+
+.featured__description
+  height: 30px
+  padding-left: 15px
+  padding-top: 15px
+  text-transform: uppercase
+
+.featured__description_cost
+  padding-bottom: 80px
+
+.featured__all-products-btn
+  width: 212px
+  height: 48px
+  margin: 15px auto
+  background-color: #f16d7f
+  color: #ffffff
+  font-size: 16px
+  font-weight: 400
+  line-height: 48px
+  text-align: center
+  word-spacing: 5px

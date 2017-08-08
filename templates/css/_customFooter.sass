@@ -1,0 +1,177 @@
+@import "brand-logo"
+
+$brandColor: #f16d7f
+
+/* Mixins */
+=subscribeFormInputFieldSet($bRad1, $bRad2, $bRad3, $bRad4, $fieldW, $fieldH, $fieldBGC)
+  width: $fieldW
+  height: $fieldH
+  background-color: $fieldBGC
+  border-radius: $bRad1 $bRad2 $bRad3 $bRad4
+
+.banner
+  padding: 97px 0
+
+.banner__img
+  display: block
+  width: 767px
+  height: 529px
+
+.banner__info
+  background-color: #222224
+  height: 529px
+
+.banner__info-item
+  color: #fbfbfb
+  text-align: left
+  padding-top: 45px
+  padding-left: 10px
+
+.banner__info-item-icon
+  display: block
+  margin: 0 auto
+
+.banner__info-item-header
+  font-size: 20px
+  font-weight: 700
+  margin-left: -5px
+
+.banner__info-item-text
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  margin-left: -10px
+  padding: 10px 25px 45px 5px
+
+.subscribe-bottom
+  height: 438px
+  background: url("../img/subscribe-bottom-background.png") no-repeat center
+  opacity: 0.5
+
+.subscribe-bottom:hover
+  opacity: 1
+
+.subscribe-bottom__info
+  height: 100%
+  padding: 108px 20px 0 0
+  border-right: 1px solid transparent
+  -moz-border-image: -moz-linear-gradient(top, #d3d3d3 0%, #f1f1f1 100%)
+  -webkit-border-image: -webkit-linear-gradient(top, #d3d3d3 0%, #f1f1f1 100%)
+  border-image: 1 linear-gradient(to bottom, #d3d3d3 0%, #f1f1f1 100%)
+
+.subscribe-bottom__info-person-photo
+  display: block
+  position: absolute
+  right: 0
+  border-radius: 50%
+
+.subscribe-bottom__info-text
+  padding: 5px 60px 0 25px
+  color: #222224
+  font-size: 16px
+  font-style: italic
+  font-weight: 400
+  line-height: 26px
+  word-spacing: 3px
+
+.subscribe-bottom__info-paragraph
+  padding-bottom: 13px
+
+.subscribe-bottom__info-name
+  font-style: normal
+  font-weight: 600
+  line-height: 16px
+
+.subscribe-bottom__info-name_location
+  font-size: 12px
+  font-weight: normal
+
+.subscribe-bottom__form
+  input
+    display: block
+    float: left
+
+.subscribe-bottom__form
+  $fieldsH: 46px
+  $mailW: 282px
+  $submitBtnW: 104px
+  margin: 108px auto
+  padding-left: 25px
+  width: $mailW + $submitBtnW + 25px
+  color: #222224
+  text-align: center
+  legend
+    border: 0
+  input[type="submit"]
+    +subscribeFormInputFieldSet(0, $fieldsH / 2, $fieldsH / 2, 0, $submitBtnW, $fieldsH, $brandColor)
+    border: 0
+    outline: none
+  input[type="email"]
+    +subscribeFormInputFieldSet($fieldsH / 2, 0, 0, $fieldsH / 2, $mailW, $fieldsH, #e1e1e1)
+    border: 0
+    outline: none
+    padding-left: 30px
+
+.subscribe-bottom__header
+  padding-top: 25px
+  font-size: 24px
+  font-weight: 400
+
+.subscribe-bottom__description
+  padding-bottom: 10px
+  font-size: 14px
+  line-height: 24px
+
+
+.footer-menu
+  padding: 110px 0 70px 0
+
+.footer-menu__cat-name
+  height: 68px
+  font-size: 18px
+  font-weight: 700
+  line-height: 40px
+  text-transform: uppercase
+
+
+.footer-menu__item
+  color: #898989
+  font-size: 16px
+  line-height: 16px
+  font-weight: 400
+  height: 42px
+
+.brand-copyright
+  position: relative
+
+.brand-copyright_background
+  height: 79px
+  background-color: #e6e6e6
+
+.brand-copyright__text
+  line-height: 79px
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+
+.social
+  position: absolute
+  right: 0
+  line-height: 79px
+  .social__item
+    width: 32px
+    height: 32px
+    margin-right: 4px
+    color: #b2b2b2
+    font-size: 16px
+    text-align: center
+    line-height: 32px
+    background-color: #ffffff
+    transition: background-color 0.5s, transform 0.5s
+  .social__item:hover
+    color: #f7f7f8
+    background-color: #f16d7f
+    transform: rotate(360deg)
+
+.social__item_inactive
+  opacity: 0.5

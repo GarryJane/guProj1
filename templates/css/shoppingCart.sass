@@ -1,0 +1,97 @@
+@import "common"
+@import "customHeader"
+@import "customBreadcrumb"
+@import "customFooter"
+
+.product-detail
+  padding-top: 75px
+  font-size: 13px
+  font-weight: 400
+  line-height: 13px
+
+  .table
+    thead
+      tr
+        th
+          padding-bottom: 20px
+          padding-left: 0
+          border-bottom: 1px solid #eaeaea
+          text-align: center
+        th:first-child
+          width: 475px
+          text-align: left
+    tbody
+      tr
+        border-bottom: 1px solid #eaeaea
+      td
+        padding: 22px 0 0 0
+        text-align: center
+        vertical-align: middle
+      td:first-child
+        text-align: left
+
+
+  .product-detail__col-name
+    font-weight: 700
+    text-transform: uppercase
+
+  .product-detail__img
+    display: block
+    width: 100px
+    height: 115px
+    float: left
+
+  .product-detail__name
+    width: 375px
+    float: right
+    padding: 10px 0 30px 21px
+    font-size: 13px
+    text-transform: uppercase
+
+  .product-detail__property
+    width: 375px
+    float: right
+    padding-left: 21px
+    color: #575757
+
+  .product-detail__property_value
+    color: #6f6e6e
+    font-weight: 300
+
+  .product-detail__cost
+    color: #656565
+
+  .product-detail__quantity
+    width: 54px
+    height: 30px
+    border: 1px solid #eaeaea
+    text-align: center
+    color: #656565
+
+  .product-detail__shipping
+    color: #656565
+    text-transform: uppercase
+
+  .product-detail__remove-icon
+    color: #c0c0c0
+    font-size: 16px
+
+  .product-detail__remove-icon:hover
+    cursor: pointer
+
+.product-detail-nav
+  position: relative
+  padding: 44px 0 63px 0
+  .product-detail-nav__btn
+    width: 235px
+    height: 50px
+    border: 1px solid #eaeaea
+    color: #4a4a4a
+    background-color: #ffffff
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+  .product-detail-nav__btn:hover
+    color: $brandRedColor
+    border-color: $brandColor
+

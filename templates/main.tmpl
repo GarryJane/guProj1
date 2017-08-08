@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="templates/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/css/style.css"> <!-- @todo Refactoring!!!! избавиться от style.css в пользу singlePage.css.css-->
+    <link rel="stylesheet" href="templates/css/singlePage.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container-fluid">
+
+<nav class="navbar">
+    <div class="container-fluid underline">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand header-nav_logo">
+                    <div class="brand-logo__icon"></div>
+                    <div class="brand-logo__name">Dnarb</div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-collapse_offset" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle navbar__browse-btn" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">Browse <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-menu__item dropdown-menu__item_category-name">Women</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="dropdown-menu__item" href="#">Dresses</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Tops</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Sweaters/Knits</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Jackets/Coats</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Blazers</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Denim</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Leggings/Pants</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Skirts/Shorts</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Accessories</a></li>
+                            <li><a href="#" class="dropdown-menu__item dropdown-menu__item_category-name">Men</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="dropdown-menu__item" href="#">Tees/Tank tops</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Shirts/Polos</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Sweaters</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Sweatshirts/Hoodies</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Blazers</a></li>
+                            <li><a class="dropdown-menu__item" href="#">Jackets/vests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search for Item...">
+                        <button type="submit" class="btn navbar-nav__submit-btn"><i class="fa fa-search"></i></button>
+                    </div>
+
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="navbar-nav__basket-icon"><img src="img/basket-icon.png" alt=""></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle navbar-nav__my-account-btn" data-toggle="dropdown"
+                           role="button" aria-haspopup="true"
+                           aria-expanded="false">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </div><!-- /.container-fluid -->
+</nav>
+<nav class="nav">
+    <div class="container">
+        <ul class="nav navbar-nav header-menu">
+            <li><a class="header-menu__item  header-menu__item_active" href="#">Home</a></li>
+            <li><a class="header-menu__item" href="#">Man</a></li>
+            <li><a class="header-menu__item" href="singlePage.html">Women</a></li>
+            <li><a class="header-menu__item" href="#">Kids</a></li>
+            <li><a class="header-menu__item" href="#">Accoseriese</a></li>
+            <li><a class="header-menu__item" href="#">Featured</a></li>
+            <li><a class="header-menu__item" href="#">Hot Deals</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row slider">
+        <section class="col-xs-12">
+            <header class="slider-container__text ">
+                <p class="slider-container__brand"> The Brand </p>
+                <p class="slider-container__slogan"> of Luxurious <a class="highlight">Fashion </a></p>
+            </header>
+            <img class="slider__img" src="templates/img/img-slider.png" alt="O-o-o-ops....">
+        </section>
+    </div>
+</div>
+<div class="container">
+    <section class="row hot-dial">
+        <div class="col-md-6">
+            <div class="hot-dial__item">
+                <header class="hot-dial__header">
+                    <p class="hot-dial__text">Hot Dial</p>
+                    <p class="hot-dial__text hot-dial__text_category highlight">For MEN</p>
+                </header>
+                <img class="hot-dial__img" src="templates/img/hot-dial-item1.png" alt="">
+            </div>
+            <div class="hot-dial__item">
+                <header class="hot-dial__header">
+                    <p class="hot-dial__text">Luxurious & Trendy</p>
+                    <p class="hot-dial__text hot-dial__text_category highlight">Accessories</p>
+                </header>
+                <img class="hot-dial__img hot-dial__img_low" src="templates/img/hot-dial-item3.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hot-dial__item">
+                <header class="hot-dial__header">
+                    <p class="hot-dial__text">30% Offer</p>
+                    <p class="hot-dial__text hot-dial__text_category highlight">Women</p>
+                </header>
+                <img class="hot-dial__img hot-dial__img_low" src="templates/img/hot-dial-item2.png" alt="">
+            </div>
+            <div class="hot-dial__item">
+                <header class="hot-dial__header">
+                    <p class="hot-dial__text">New Arrivals</p>
+                    <p class="hot-dial__text hot-dial__text_category highlight">For Kids</p>
+                </header>
+                <img class="hot-dial__img" src="templates/img/hot-dial-item4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <span class="col-md-12 featured__header">Featured Items</span>
+    </div>
+    <div class="row">
+        <span class="col-md-12 featured__header featured__header_description">Shop for items based on wat we featured on this week</span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="featured__item">
+                <img src="templates/img/featured-item1.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+            <div class="featured__item">
+                <img src="templates/img/featured-item5.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="featured__item">
+                <img src="templates/img/featured-item2.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+            <div class="featured__item">
+                <img src="templates/img/featured-item6.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <img src="templates/img/featured-item3.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+            <div class="featured__item">
+                <img src="templates/img/featured-item7.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="featured__item">
+                <img src="templates/img/featured-item4.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+            <div class="featured__item">
+                <img src="templates/img/featured-item8.png" alt="" class="featured__img">
+                <div class="featured__description">Mango People T-Shirt</div>
+                <div class="featured__description featured__description_cost highlight">$52.00</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="row featured__all-products-btn">
+        <div class="col-md-12"> Browse All Products <i class="fa fa-long-arrow-right"></i></div>
+    </nav>
+
+    <section class="row banner">
+        <div class="col-md-8">
+            <img class="banner__img" src="templates/img/banner.png" alt="A Young Girl... ">
+        </div>
+        <div class="col-md-4 banner__info">
+            <div class="banner__info-item">
+                <div class="col-md-3">
+                    <img class="banner__info-item-icon" src="templates/img/icon-delivery.png" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="banner__info-item-header">
+                        Free Delivery
+                    </div>
+                    <div class="banner__info-item-text">
+                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                        models.
+                    </div>
+                </div>
+            </div>
+            <div class="banner__info-item">
+                <div class="col-md-3">
+                    <img class="banner__info-item-icon" src="templates/img/icon-sales.png" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="banner__info-item-header">Sales & discounts</div>
+                    <div class="banner__info-item-text">
+                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                        models.
+                    </div>
+                </div>
+            </div>
+            <div class="banner__info-item">
+                <div class="col-md-3">
+                    <img class="banner__info-item-icon" src="templates/img/icon-quality.png" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="banner__info-item-header">Quality assurance</div>
+                    <div class="banner__info-item-text">
+                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                        models.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> <!-- ./container -->
+
+<div class="container-fluide">
+    <section class="row subscribe-bottom">
+        <div class="col-md-6 subscribe-bottom__info">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="subscribe-bottom__info-person-photo" src="templates/img/subscribe-bottom-person.png"
+                         alt="It's me!">
+                </div>
+                <div class="col-md-7 subscribe-bottom__info-text">
+                    <div class="subscribe-bottom__info-paragraph">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
+                        condimentum mattis neque sed pretium”
+                    </div>
+                    <div class="subscribe-bottom__info-name highlight">
+                        Bin Burhan
+                    </div>
+                    <div class="subscribe-bottom__info-name subscribe-bottom__info-name_location">
+                        Dhaka, Bd
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form class="subscribe-bottom__form" action="#" method="post">
+                <fieldset>
+                    <legend>
+                        <div class="subscribe-bottom__header">SUBSCRIBE</div>
+                        <div class="subscribe-bottom__description">FOR OUR NEW LETTER AND PROMOTION</div>
+                    </legend>
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                    <input type="submit" value="Subscribe">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <nav class="footer-menu row">
+            <div class="col-md-5">
+                <div class="brand-logo clearfix">
+                    <div class="brand-logo__icon"></div>
+                    <div class="brand-logo__name">Dnarb</div>
+                </div>
+                <p class="brand-logo__message">
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded
+                    array of processes and cross-unit partnerships.
+                </p>
+                <p class="brand-logo__message">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="col-md-7">
+                <nav class="row">
+                    <div class="col-md-4">
+                        <div class="footer-menu__cat-name highlight">COMPANY</div>
+                        <div class="footer-menu__item">Home</div>
+                        <div class="footer-menu__item">Shop</div>
+                        <div class="footer-menu__item">About</div>
+                        <div class="footer-menu__item">How It Works</div>
+                        <div class="footer-menu__item">Contact</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-menu__cat-name highlight">INFORMATION</div>
+                        <div class="footer-menu__item">Tearms & Condition</div>
+                        <div class="footer-menu__item">Privacy Policy</div>
+                        <div class="footer-menu__item">How to Buy</div>
+                        <div class="footer-menu__item">How to Sell</div>
+                        <div class="footer-menu__item">Promotion</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-menu__cat-name highlight">SHOP CATEGORY</div>
+                        <div class="footer-menu__item">Men</div>
+                        <div class="footer-menu__item">Women</div>
+                        <div class="footer-menu__item">Child</div>
+                        <div class="footer-menu__item">Apparel</div>
+                        <div class="footer-menu__item">Brows All</div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluide brand-copyright_background">
+        <div class="container brand-copyright">
+            <span class="brand-copyright__text">© 2017  Brand  All Rights Reserved.</span>
+            <span class="social">
+                <i class="social__item fa fa-facebook" aria-hidden="true"></i>
+                <i class="social__item fa fa-twitter" aria-hidden="true"></i>
+                <i class="social__item social__item_inactive fa fa-linkedin" aria-hidden="true"></i>
+                <i class="social__item fa fa-pinterest-p" aria-hidden="true"></i>
+                <i class="social__item fa fa-google-plus" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="templates/vendor/jquery/jquery.min.js"></script>
+<script src="templates/vendor/bootstrap/js/bootstrap.min.js"></script>
+</html>
