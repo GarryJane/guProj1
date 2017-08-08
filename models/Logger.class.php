@@ -51,7 +51,7 @@ abstract class Logger
             if (is_array($a)) {
                 $result .= self::arr2str($a) . "\n";
             } else {
-                $result .= ($counter < $numItems) ? $a . ", " : $a;
+                $result .= ($counter < $numItems) ? $a . ", " : $a; 
             }
             $counter++;
         }
