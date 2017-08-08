@@ -15,9 +15,9 @@ class Controller
 
         if(isset($_GET)) {
              self::byGET();
+        } else {
+            self::render();
         }
-
-        self::render();
     }
 
     protected function byGET()
