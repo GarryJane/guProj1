@@ -6,5 +6,3 @@ require_once ('ClassesLoader.php');
 ClassesLoader::load(['models']);
 
 $page = new Controller();
-
-
