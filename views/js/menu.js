@@ -1,14 +1,9 @@
-'use strict'
+'use strict';
 
 function Container() {
     this.id = "";
     this.className = "";
-    this.htmlCode = "";
 }
-
-Container.prototype.render = function () {
-    return this.htmlCode;
-};
 
 function Menu(my_id, my_class, my_items) {
     Container.call(this);
@@ -18,8 +13,6 @@ function Menu(my_id, my_class, my_items) {
 }
 
 Menu.prototype.constructor = Menu;
-Menu.prototype.render = function () {
-};
 
 function MenuItem(my_href, my_name) {
     this.className = "menu-item";
@@ -33,11 +26,11 @@ MenuItem.prototype.renderItem = function () {
     return "<li class='" + this.className + "'><a href='" + this.href + "'>" + this.name + "</a></li>";
 };
 
-MenuItem.prototype.renderSeparator = function renderSeparator() {
+MenuItem.prototype.renderSeparator = function () {
     return "<li role='separator' class='divider'></li>";
 };
 
-MenuItem.prototype.renderDropdown = function renderSeparator() {
+MenuItem.prototype.renderDropdown = function () {
 };
 
 
@@ -57,25 +50,24 @@ Menu.prototype.render = function () {
     }
  };
 
-    var m_items = {
-
-        0: new MenuItem("#", "Dresses"),
-        1: new MenuItem("#", "Tops"),
-        2: new MenuItem("#", "Sweaters/Knits"),
-        3: new MenuItem("#", "Jackets/Coats"),
-        4: new MenuItem("#", "Blazers"),
-        5: new MenuItem("#", "Denim"),
-        6: new MenuItem("#", "Leggings/Pants"),
-        7: new MenuItem("#", "Skirts/Shorts"),
-        8: new MenuItem("#", "---"),
-        9: new MenuItem("#", "afsdfdf"),
-        10: new MenuItem("#", ""),
-        11: new MenuItem("#", ""),
-        12: new MenuItem("#", "Sweaters"),
-        13: new MenuItem("#", ""),
-        14: new MenuItem("#", ""),
-        15: new MenuItem("#", "Jackets/vests")
-    };
+    var m_items = [
+        new MenuItem("#", "Dresses"),
+        new MenuItem("#", "Tops"),
+        new MenuItem("#", "Sweaters/Knits"),
+        new MenuItem("#", "Jackets/Coats"),
+        new MenuItem("#", "Blazers"),
+        new MenuItem("#", "Denim"),
+        new MenuItem("#", "Leggings/Pants"),
+        new MenuItem("#", "Skirts/Shorts"),
+        new MenuItem("#", "---"),
+        new MenuItem("#", "afsdfdf"),
+        new MenuItem("#", "fasdf"),
+        new MenuItem("#", ""),
+        new MenuItem("#", "Sweaters"),
+        new MenuItem("#", ""),
+        new MenuItem("#", ""),
+        new MenuItem("#", "Jackets/vests")
+    ];
 
     console.log(m_items);
 
